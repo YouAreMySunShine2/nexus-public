@@ -42,7 +42,7 @@ public class PerformanceChartTest
     chartFile = new File(chartDir, name.getMethodName() + ".html");
   }
 
-  @Test
+//  @Test
   public void writeChartSmokeTest() throws Exception {
     final PerformanceData perfData =  new PerformanceData();
     final PerformanceTestSeries data = perfData.findTestResult("sample");

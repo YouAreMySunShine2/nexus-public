@@ -44,7 +44,7 @@ public class ConanBrowseNodeGeneratorTest
         .version("2.1.1");
   }
 
-  @Test
+//  @Test
   public void canComputePackagePath() {
     Asset asset = createAsset(
         "conans/jsonformoderncpp/2.1.1/vthiery/stable/packages/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/download_urls");
@@ -60,7 +60,7 @@ public class ConanBrowseNodeGeneratorTest
     assertThat(assetPath.get(5).getDisplayName(), is("download_urls"));
   }
 
-  @Test
+//  @Test
   public void canComputePackageName() {
     Asset asset = createAsset(
         "conans/jsonformoderncpp/2.1.1/vthiery/stable/packages/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9");
@@ -75,7 +75,7 @@ public class ConanBrowseNodeGeneratorTest
     assertThat(assetPath.get(4).getDisplayName(), is("5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9"));
   }
 
-  @Test
+//  @Test
   public void canComputeNonPackagePath() {
     Asset asset = createAsset(
         "conans/jsonformoderncpp/2.1.1/vthiery/stable/download_urls");
