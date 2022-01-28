@@ -148,13 +148,13 @@ public class NexusMain
 
   //Visible for testing
   static void requireMinimumJavaVersion() {
-    if (isNotSupportedVersion(System.getProperty("java.version"))) {
-      // logging is not configured yet, so use console
-      System.err.println("Nexus requires minimum java.version: " + MINIMUM_JAVA_VERSION);
-      if (versionCheckRequired()) {
-        System.exit(-1);
-      }
-    }
+//    if (isNotSupportedVersion(System.getProperty("java.version"))) {
+//      // logging is not configured yet, so use console
+//      System.err.println("Nexus requires minimum java.version: " + MINIMUM_JAVA_VERSION);
+//      if (versionCheckRequired()) {
+//        System.exit(-1);
+//      }
+//    }
   }
 
   private static boolean isNotSupportedVersion(final String currentVersion) {
